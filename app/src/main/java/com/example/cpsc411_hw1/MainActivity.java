@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         TextView tv;
         GridLayout.LayoutParams tempParams;
 
-        //Setting Row 1
         for(int i = 0; i < 11; i++){
             tempParams = new GridLayout.LayoutParams(GridLayout.spec(i),GridLayout.spec(0));
             tempParams.setGravity(Gravity.FILL_HORIZONTAL);
@@ -43,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
         tv = createTV("\"Rules void hello1(int hour)\"", tempParams, "black", true);
         gl.addView(tv);
 
-
-        //Settings Row 2 and 3
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(1,2),GridLayout.spec(1));
         tempParams.setGravity(Gravity.CENTER);
         tv = createTV("properties", tempParams, "none", true);
@@ -71,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         tv = createTV("Day and Time", tempParams, "none", false);
         gl.addView(tv);
 
-        //Settings Row 4
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(3),GridLayout.spec(1));
         tempParams.setGravity(Gravity.FILL);
         tv = createTV("Rule", tempParams, "blue", true);
@@ -90,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
         tv.setTypeface(Typeface.DEFAULT_BOLD);
         gl.addView(tv);
 
-        //Setting Row 5
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(4),GridLayout.spec(1));
         tempParams.setGravity(Gravity.FILL);
         tv = createTV("", tempParams, "blue", false);
@@ -106,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
         tv = createTV("System.out.println(greeting + \\\", World!\\\")\"", tempParams, "blue", true);
         gl.addView(tv);
 
-        //Setting Row 6
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(5),GridLayout.spec(1));
         tempParams.setGravity(Gravity.FILL);
         tv = createTV("", tempParams, "blue", false);
@@ -125,12 +119,10 @@ public class MainActivity extends AppCompatActivity {
         tv = createTV("String greeting!", tempParams, "blue", true);
         gl.addView(tv);
 
-        //Setting Row 7
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(6),GridLayout.spec(1));
         tv = createTV("Rule", tempParams, "none", false);
         tv.setTypeface(Typeface.DEFAULT_BOLD);
         gl.addView(tv);
-
 
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(6),GridLayout.spec(2));
         tempParams.setGravity(Gravity.FILL);
@@ -154,7 +146,6 @@ public class MainActivity extends AppCompatActivity {
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(7),GridLayout.spec(1));
         tv = createTV("R10", tempParams, "none", false);
         gl.addView(tv);
-
 
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(7),GridLayout.spec(2));
         tempParams.setGravity(Gravity.FILL);
@@ -183,7 +174,6 @@ public class MainActivity extends AppCompatActivity {
         tv.setGravity(Gravity.RIGHT);
         gl.addView(tv);
 
-
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(8),GridLayout.spec(3));
         tempParams.setGravity(Gravity.FILL);
         tv = createTV("17", tempParams, "yellow", false);
@@ -198,7 +188,6 @@ public class MainActivity extends AppCompatActivity {
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(9),GridLayout.spec(1));
         tv = createTV("R30", tempParams, "none", false);
         gl.addView(tv);
-
 
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(9),GridLayout.spec(2));
         tempParams.setGravity(Gravity.FILL);
@@ -221,7 +210,6 @@ public class MainActivity extends AppCompatActivity {
         tv = createTV("R40", tempParams, "none", false);
         gl.addView(tv);
 
-
         tempParams = new GridLayout.LayoutParams(GridLayout.spec(10),GridLayout.spec(2));
         tempParams.setGravity(Gravity.FILL);
         tv = createTV("22", tempParams, "yellow", false);
@@ -242,6 +230,7 @@ public class MainActivity extends AppCompatActivity {
         hsv.addView(gl);
         setContentView(hsv);
     }
+    
     public TextView createTV(String txt, GridLayout.LayoutParams pram, String color, boolean center) {
         TextView tv;
         tv = new TextView(this);
